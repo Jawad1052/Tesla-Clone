@@ -20,7 +20,7 @@ To get the Tesla clone up and running locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/tesla-clone.git
+    git clone https://github.com/Jawad1052/Tesla-Clone.git
     cd tesla-clone
     ```
 
