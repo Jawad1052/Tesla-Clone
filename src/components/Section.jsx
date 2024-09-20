@@ -1,21 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Fade, Slide } from "react-awesome-reveal";
 function Section({ title, description, backgroundImg, leftBtnText, rightBtnText }) {
     return (
-        <Wrap bgImage={backgroundImg}>
-            <ItemText>
-                <h1>{title}</h1>
-                <p>{description}</p>
-            </ItemText>
+        <Wrap bgimage={backgroundImg}>
+            <Slide direction='up'>
+                <ItemText>
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                </ItemText>
+            </Slide>
             <Buttons>
-                <ButtonGroup>
-                    <LeftButton>
-                        {leftBtnText}
-                    </LeftButton>
-                    {rightBtnText && <RightButton>
-                        {rightBtnText}
-                    </RightButton>}
-                </ButtonGroup>
+                <Slide direction='up'>
+                    <ButtonGroup>
+                        <LeftButton>
+                            {leftBtnText}
+                        </LeftButton>
+                        {rightBtnText && <RightButton>
+                            {rightBtnText}
+                        </RightButton>}
+                    </ButtonGroup>
+                </Slide>
                 <DownArrow src="/images/down-arrow.svg" />
             </Buttons>
         </Wrap>
@@ -29,7 +34,7 @@ width: 100vw;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-background-image: ${props => `url('./images/${props.bgImage}')`};
+background-image: ${props => `url('./images/${props.bgimage}')`};
 display:flex;
 flex-direction:column;
 justify-content:space-between;
