@@ -11,7 +11,7 @@ This is a Tesla clone project built using **React**, **React Redux**, and **Styl
 ## Features
 
 - **Responsive Design**: Works seamlessly across different screen sizes.
-- **Redux State Management**: Efficiently manages the state for features like user interaction, authentication, and UI updates.
+- **Redux State Management**: Efficiently manages the state for features like userUI updates.
 - **Styled Components**: Provides modular, scoped CSS to style components dynamically.
 
 ## Installation
@@ -44,7 +44,7 @@ To get the Tesla clone up and running locally, follow these steps:
 
 ## Deployed Link
 
-- **https://tesla-clone-react-murex.vercel.app/
+- https://tesla-clone-react-murex.vercel.app/
 
 ## Future Improvements
 
